@@ -25,7 +25,7 @@ repositories {
 }
 
 dependencies {
-    // TODO: Add dependencies here ... add test commit
+    // TODO: Add dependencies here ... add test commit, test 2
     compile group: 'org.springframework.batch', name: 'spring-batch-core', version: '2.2.3.RELEASE'
     // You can read more about how to add dependency here:
     //   http://www.gradle.org/docs/current/userguide/dependency_management.html#sec:how_to_declare_your_dependencies
