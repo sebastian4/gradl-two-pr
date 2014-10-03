@@ -11,11 +11,15 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Maine {
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
         System.out.println("hello world gradl-two-pr");
+        
+        greetExample();
+    }
+    
+    public static void greetExample() {
+        System.out.println("gradl-two-pr greetExample");
         
         ApplicationContext context = new ClassPathXmlApplicationContext("job-hello-world.xml");
 
@@ -24,7 +28,6 @@ public class Maine {
         Job job = (Job) context.getBean("helloWorldJob");
 
         try {
-        	
 			jobLauncher.run(job, new JobParameters());
 			
 		} catch (JobExecutionAlreadyRunningException | JobRestartException
