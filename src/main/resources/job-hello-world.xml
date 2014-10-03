@@ -13,7 +13,7 @@
         <property name="jobRepository" ref="jobRepository"/>
     </bean>
 
-    <bean id="greeting" class="slpz.grtwo.Greeting" scope="prototype"/>
+    <bean id="greeting" class="slpz.grtwo.greets.Greeting" scope="prototype"/>
 
     <bean id="greetingReader" class="org.springframework.batch.item.file.FlatFileItemReader">
         <property name="resource" value="classpath:greetings.csv"/>
@@ -33,9 +33,9 @@
         </property>
     </bean>
 
-    <bean id="greetingProcessor" class="slpz.grtwo.GreetingProcessor"/>
+    <bean id="greetingProcessor" class="slpz.grtwo.greets.GreetingProcessor"/>
 
-    <bean id="greetingWriter" class="slpz.grtwo.GreetingWriter"/>
+    <bean id="greetingWriter" class="slpz.grtwo.greets.GreetingWriter"/>
 
     <batch:job id="helloWorldJob">
         <batch:step id="step1">

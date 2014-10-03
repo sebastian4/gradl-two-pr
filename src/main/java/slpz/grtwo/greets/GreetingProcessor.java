@@ -1,4 +1,4 @@
-package slpz.grtwo;
+package slpz.grtwo.greets;
 
 import org.springframework.batch.item.ItemProcessor;
 
